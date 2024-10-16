@@ -12,3 +12,4 @@ C:\Users\ACER\Documents\VSCODE\Belajar C#\Matkul\Robot\obj\Debug\net8.0\refint\R
 C:\Users\ACER\Documents\VSCODE\Belajar C#\Matkul\Robot\obj\Debug\net8.0\Robot.pdb
 C:\Users\ACER\Documents\VSCODE\Belajar C#\Matkul\Robot\obj\Debug\net8.0\Robot.genruntimeconfig.cache
 C:\Users\ACER\Documents\VSCODE\Belajar C#\Matkul\Robot\obj\Debug\net8.0\ref\Robot.dll
+C:\Users\ACER\Documents\VSCODE\Belajar C#\Matkul\Robot\obj\Debug\net8.0\Robot.sourcelink.json

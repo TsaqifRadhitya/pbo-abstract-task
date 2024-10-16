@@ -52,19 +52,19 @@ public class Game{
                 System.Console.WriteLine($"Game Dimenangkan Oleh {this.get_winner()}");
                 break;
             }
-
+            System.Console.Write("Tekan Enter Untuk Lanjut");
+            Console.ReadLine(); 
             this.Enemy_session();
 
             if (Player.energi < 0 || Enemy.energi < 0 || turn == 12){
                 System.Console.WriteLine("Game Berakhir");
                 System.Console.WriteLine($"Game Dimenangkan Oleh {this.get_winner()}");
                 break;
-            }
-            System.Console.WriteLine("Tekan Enter Untuk Lanjut");
-            Console.ReadLine(); 
+            } 
             this.Player.Gunakan_kemampuan(this.ability_player,this.Player,"Regen");
             this.turn ++;
-            Console.Clear(); 
+            System.Console.Write("Tekan Enter Untuk Lanjut");
+            Console.ReadLine(); 
         }
     }
     public void Player_session(){
@@ -96,11 +96,8 @@ public class Game{
                 status_aksi = (Player.Gunakan_kemampuan(this.ability_player,this.Player,"Shield"));
                 break;
         } 
-        if(!(status_aksi)){
-            Console.Clear();
+        if(!(status_aksi)){;
             this.Player_session();}
-        System.Console.WriteLine("Tekan Enter Untuk Lanjut");
-        Console.ReadLine();
         }
         
     public void Enemy_session(){
@@ -122,7 +119,7 @@ public class Game{
                 status_aksi = (Enemy.Gunakan_kemampuan(this.ability_enemy,this.Player,"Electric"));
                 break;
         } 
-        if(!(status_aksi)){this.Enemy_session();}   
+        if(!(status_aksi)){this.Enemy_session();}
     }
 
     public string get_winner(){
