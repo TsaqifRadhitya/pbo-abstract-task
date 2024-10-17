@@ -45,7 +45,7 @@ public class Game{
 
     public void Start_Game(){
         while(true){
-            this.Reduce_Coundown();
+            this.Reduce_Countdown();
             this.Player_session();
             if (Player.energi < 0 || Enemy.energi < 0 || turn == 12){
                 System.Console.WriteLine("Game Berakhir");
@@ -130,7 +130,7 @@ public class Game{
         }
     }
 
-    public void Reduce_Coundown(){
+    public void Reduce_Countdown(){
         if(ability_enemy.electric.current_countdown_time > 0){
             ability_enemy.electric.current_countdown_time --;
         }
@@ -320,7 +320,7 @@ public class Electric : Skill{
 
     public Electric(){
         this.name = "Electric Shock";
-        this.current_countdown_time = 1;
+        this.couldown_time = 1;
         this.damage_scale = 1.5;
     }
 }
